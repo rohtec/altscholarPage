@@ -1,7 +1,8 @@
 input::placeholder {
-	letter-spacing: -0.4px;
+	letter-spacing: -0.3px;
     font-size: 13px;
-    color: rgba(60, 60, 60, 0.6);
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
 }
 body {
 /*	position: relative;*/
@@ -49,111 +50,33 @@ img{
 	font-size: 12px;
 	font-size: Trebuchet MS;
 }
-.dropdown3{
-	 letter-spacing: -0.4px;
-    font-size: 14px;
-    font-weight: bolder;
-    color: rgba(60, 60, 60, 0.7);
-	position: relative;
-	width: 100%;
-	display: inline-block;
-	background-color: #fff;
-	border-radius: 2px;
-	font-size: 14px;
-	height: 100%;
-	text-align: left;
-}
 
 .dropdown1 {
 	 letter-spacing: -0.4px;
     font-size: 14px;
     font-weight: bolder;
-    color: rgba(60, 60, 60, 0.9);
+    color: rgba(60, 60, 60, 0.8);
 
 }
-/*.dropdown3 .selected-item {
-	cursor: pointer;
-}
-.dropdown3 .selected-item > i {
-	font-size: 12px;
-	color: #888;
-	cursor: pointer;
-	float: right;
-	line-height: 20px;
-}
-.dropdown3:hover {
-	box-shadow: 0 0 4px rgb(204, 204, 204);
-	border: 1px solid blue;
-   border-radius: 5px;
-}
 
-.dropdown3:active option{
-	box-shadow: 0 0 4px rgb(204, 204, 204);
-	border-radius: 2px 2px 0 0;
-	background-color: #f8f8f8;
-	border: 1px solid blue;
-	display: block;
-}
-.dropdown3 select  {
-	
-}
-.select-selected:after {
-	position: absolute;
-	background-color: #fff;
-	width: 100%;
-	left: 0;
-	margin-top: 15px;
-	box-shadow: 0 1px 4px rgb(204, 204, 204);
-	border-radius: 7px;
-	overflow: hidden;
-   border-color: #fff transparent transparent transparent;
-	max-height: 144px;
-	overflow-y: auto;
-	z-index: 9;
-	padding: 4px;
-	list-style-type: none;
-}
-.dropdown3 select option {
-	padding: 7px;
-	cursor: pointer;
-	font-size: 14px;
-	font-weight: 400;
-}
-.select-items {
-	position: absolute;
-	background-color: darkred;
-	top: 100%;
-	left: 0;
-	right: 0;
-	z-index: 99;
-}
-.select-items div:hover, .same-as-selected {
-	background-color: rgba(0, 0, 0, 1.0);
-}*/
 input {
 	cursor: pointer;
 	outline: none;
 	background-color: white;
 	font-size: 10px;
+	font-family: Poppins;
 }
 
  input:active, input:focus {
 
     border: 1px solid blue;
-    border-radius: 5px;
-    
+    border-radius: 5px;   
 }
-/*select:active, select:focus {
 
-    border: 1px solid blue;
-    border-radius: 5px;  
-}
-select {
-	outline: none;
-}*/
 input[type="date"]::-webkit-calendar-picker-indicator {
-
+ display: none;
 }
+
 #boxx {
 	background-color: rgb(255,246,238);
 	display: none;
@@ -163,20 +86,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* The container must be positioned relative: */
 .custom-select {
   position: relative;
-  font-family: Arial;
+  font-family: Poppins;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
+  padding: 11px 7px 7px 6px;
+  letter-spacing: -0.9px;
 }
 
 .custom-select select {
   display: none; /*hide original SELECT element: */
 }
-
 .select-selected {
   background-color: transparent;
-  color: rgba(60, 60, 60, 0.7);
+  color: rgba(60, 60, 60, 0.6);
   font-weight: 400;
-  letter-spacing: -0.5px;
+  font-size: 13px;
+  letter-spacing: -0.9px;
   font-family: Poppins;
   border-color: transparent;
 }
@@ -200,13 +125,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* style the items (options), including the selected item: */
-.select-items div,.select-selected {
+.select-items div {
   color: rgba(60, 60, 60, 0.7);
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.3px;
   font-family: Poppins;
   font-size: 13px;
-  padding: 8px 10px;
+  padding-left: 5px;
   cursor: pointer;
 }
 
@@ -214,11 +139,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .select-items {
 	border: 1px solid #e5e5e5;
   position: absolute;
-  background-color: white;
+  background-color: #f3f3f3;
   color: black;
   top: 100%;
-  left: 5px;
-  right: 5px;
+  right: 0;
+  left:0;
   z-index: 99;
   border-radius: 4px;
 }
@@ -230,7 +155,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .select-items div:hover, .same-as-selected {
   background-color: white;
-  box-shadow: 0px 2px 2px 2px rgba(128, 128, 128, 0.5);
+  margin:3px 4px;
+  box-shadow: 0px 2px 2px 2px rgba(128, 128, 128, 0.2);
 }
 
 
@@ -238,7 +164,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 main {
 	border: none;
-/*	box-shadow: 2px 2px 4px rgba(128, 128, 128, 0.5);*/
 	grid-template-columns: 1fr 1fr;
 	display: grid;
 }
@@ -252,7 +177,6 @@ z-index: 1;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	height: 6.1rem;
-/*	border: 1px solid red;*/
 }
 #logo { 
 	position: fixed;
@@ -260,10 +184,10 @@ z-index: 1;
 	top: 20px;
 
  }
+
  .circle1 {
  	background-color: rgb(251,228,209);
- 	position: absolute;
- 	left: 580px;
+ 	left: 36.7%;
  	top: -10px;
  	width: 280px;
  	height: 140px;
